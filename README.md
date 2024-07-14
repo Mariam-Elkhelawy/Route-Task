@@ -12,7 +12,7 @@ This Flutter application displays a list of products fetched from a remote API i
 
 ## 📸 Screenshots
 
-<img src="https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/product.png" height="600">  <img src="https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/loading.png"  height="600">  <img src="https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/error.png" height="600">  
+<img src="https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/product.png" height="585">  <img src="https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/loading.png"  height="585">  <img src="https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/error.png" height="585">  
 ## 🗂️ Project Structure
 
 The project follows the MVVM pattern and clean architecture. Below is a brief overview of the structure:
