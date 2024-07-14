@@ -34,11 +34,11 @@ The project follows the MVVM pattern and clean architecture. Below is a brief ov
 - **`README.md`**: This Markdown file contains documentation and information about the project structure, features, and usage instructions.
 
 ## 🏛️ Architecture
-### 🗃️ Bloc
+### 🗃️ Bloc:
 The application uses Bloc for state management. The `ProductBloc` handles fetching products and updating the UI state.
-### 🏗️ Repository Pattern
+### 🏗️ Repository Pattern:
 The `ProductRepository` handles data fetching from the API. It abstracts the data source from the Bloc.
-### 🔌 Dependency Injection
+### 🔌 Dependency Injection:
 The application uses `get_it` and `injectable` for dependency injection. Dependencies are registered in the `setup.dart` file.
 
 ---
