@@ -38,6 +38,7 @@ The project follows the MVVM pattern and clean architecture. Below is a brief ov
 
 ## 🏛️ Architecture
 ### 🗃️ Bloc
+
 The application uses Bloc for state management. The `ProductBloc` handles fetching products and updating the UI state.
 ### 🏗️ Repository Pattern
 
