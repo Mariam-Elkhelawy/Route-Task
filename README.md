@@ -1,3 +1,27 @@
+# 🛒 Product List App
+
+This Flutter application displays a list of products fetched from a remote API in a grid view. The project adheres to the principles of clean architecture, using Bloc for state management, the repository pattern for data handling, and dependency injection with `get_it` and `injectable`.
+
+## ✨ Features
+
+- 📡 Fetches products from the [DummyJSON API](https://dummyjson.com/products).
+- 🗂️ Displays products in a grid view.
+- 🔍 Includes a search bar (currently not functional, placeholder only).
+- 🗃️ Uses Bloc for state management.
+- 🛠️ Implements dependency injection using `get_it`.
+
+## 📸 Screenshots
+
+![Product Screen](screenshots/product_screen.png)
+![Loading State](screenshots/loading_state.png)
+![Error State](screenshots/error_state.png)
+
+## 🗂️ Project Structure
+
+The project follows the MVVM pattern and clean architecture. Below is a brief overview of the structure:
+
+
+
 # Route Task
 
 A new Flutter project.
