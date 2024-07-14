@@ -20,11 +20,9 @@ This Flutter application displays a list of products fetched from a remote API i
 
 The project follows the MVVM pattern and clean architecture. Below is a brief overview of the structure:
 - **`lib/`**: This directory contains the main logic of the application.
-  
   - **`core/`**: 
     - **`components/`**: Reusable UI components.
     - **`utils/`**: Utility classes and constants.
-
   - **`features/`**:
     - **`products/`**: 
        - **`data/`**: Manages data layer operations such as API integrations and data sources and models.
@@ -32,8 +30,7 @@ The project follows the MVVM pattern and clean architecture. Below is a brief ov
        - **`presentation/`**: Presentation layer using BLoC for state management, UI widgets, and screens.
           - **`blocs/`**
           - **`screens/`**
-          - **`widgets/`**
-            
+          - **`widgets/`**     
   - **`main/`**: Application entry point.
 - **`assets/`**: Stores static assets such as images that are used in various parts of the application.
 - **`pubspec.yaml`**: The project's configuration file where dependencies and metadata are specified.
