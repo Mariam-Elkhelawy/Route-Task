@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:route_task/core/utils/app_colors.dart';
 import 'package:route_task/core/utils/app_images.dart';
@@ -35,12 +34,14 @@ class ProductItem extends StatelessWidget {
                   topRight: Radius.circular(15.r),
                 ),
                 child: CachedNetworkImage(
-                  width: 191.w,height: 140.h,
+                  width: 191.w,
+                  height: 130.h,
                   imageUrl: products?[index].images?[0] ?? 'Image',
                   fit: BoxFit.cover,
-                  progressIndicatorBuilder:
-                      (context, url, downloadProgress) => Center(
-                    child: CircularProgressIndicator(color: AppColor.primaryColor,
+                  progressIndicatorBuilder: (context, url, downloadProgress) =>
+                      Center(
+                    child: CircularProgressIndicator(
+                        color: AppColor.primaryColor,
                         value: downloadProgress.progress),
                   ),
                   errorWidget: (context, url, error) =>
@@ -50,7 +51,7 @@ class ProductItem extends StatelessWidget {
               Positioned(
                 top: 8.h,
                 left: 140.w,
-                child: Image.asset('assets/images/fav.png'),
+                child: Image.asset(AppImages.fav),
               )
             ],
           ),

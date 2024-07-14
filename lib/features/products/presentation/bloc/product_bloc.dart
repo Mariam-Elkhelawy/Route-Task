@@ -17,7 +17,7 @@ class ProductBloc extends Bloc<ProductEvent, ProductState> {
   ProductBloc({required this.getAllProductsUseCase})
       : super(const ProductState()) {
     on<GetProductsEvent>((event, emit) async {
-      emit(state.copyWith(getProductsStatus: ScreenStatus.loading));
+       emit(state.copyWith(getProductsStatus: ScreenStatus.loading));
       var result = await getAllProductsUseCase.call();
       result.fold((l) {
         emit(state.copyWith(

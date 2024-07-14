@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:route_task/config.dart';
 import 'package:route_task/core/components/reusable_components.dart';
+import 'package:route_task/core/enums/enums.dart';
 import 'package:route_task/core/utils/app_colors.dart';
 import 'package:route_task/core/utils/app_images.dart';
 import 'package:route_task/core/utils/app_strings.dart';
@@ -23,9 +24,28 @@ class ProductScreen extends StatelessWidget {
           const GetProductsEvent(),
         ),
       child: BlocConsumer<ProductBloc, ProductState>(
-        listener: (context, state) {},
+        listener: (context, state) {
+          if (state.getProductsStatus == ScreenStatus.loading) {
+            const Center(
+              child: CircularProgressIndicator(
+                color: AppColor.primaryColor,
+              ),
+            );
+          } else if (state.getProductsStatus == ScreenStatus.failure) {
+            showDialog(
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  title: const Text(AppStrings.error),
+                  content: Text(state.getProductsFailure?.message ?? ""),
+                );
+              },
+            );
+          }
+        },
         builder: (context, state) {
           return Scaffold(
+            backgroundColor: AppColor.whiteColor,
             appBar: AppBar(
               automaticallyImplyLeading: false,
               elevation: 0,
@@ -69,7 +89,7 @@ class ProductScreen extends StatelessWidget {
                   ]),
             ),
             body: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.w, 26.h, 16.w, 16.h),
+              padding: EdgeInsetsDirectional.fromSTEB(16.w, 24.h, 16.w, 0.h),
               child: GridView.builder(
                 itemBuilder: (context, index) {
                   return ProductItem(
@@ -81,7 +101,7 @@ class ProductScreen extends StatelessWidget {
                   crossAxisCount: 2,
                   mainAxisSpacing: 16.w,
                   crossAxisSpacing: 16.h,
-                  childAspectRatio: .73,
+                  childAspectRatio: .76,
                 ),
               ),
             ),
