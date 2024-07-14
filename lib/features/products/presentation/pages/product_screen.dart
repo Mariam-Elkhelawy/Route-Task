@@ -26,10 +26,17 @@ class ProductScreen extends StatelessWidget {
       child: BlocConsumer<ProductBloc, ProductState>(
         listener: (context, state) {
           if (state.getProductsStatus == ScreenStatus.loading) {
-            const Center(
-              child: CircularProgressIndicator(
-                color: AppColor.primaryColor,
-              ),
+            showDialog(
+              context: context,
+              builder: (context) {
+                return const AlertDialog(
+                  title: Center(
+                    child: CircularProgressIndicator(
+                      color: AppColor.primaryColor,
+                    ),
+                  ),
+                );
+              },
             );
           } else if (state.getProductsStatus == ScreenStatus.failure) {
             showDialog(
