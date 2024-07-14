@@ -41,6 +41,7 @@ The `ProductRepository` handles data fetching from the API. It abstracts the dat
 ### 🔌 Dependency Injection
 The application uses `get_it` and `injectable` for dependency injection. Dependencies are registered in the `setup.dart` file.
 
+---
 
 ## 🤝 Contributing 
 
