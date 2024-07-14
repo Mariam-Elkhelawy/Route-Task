@@ -12,9 +12,9 @@ This Flutter application displays a list of products fetched from a remote API i
 
 ## 📸 Screenshots
 
-![Product Screen](screenshots/product_screen.png)
-![Loading State](screenshots/loading_state.png)
-![Error State](screenshots/error_state.png)
+![Product Screen](https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/product.png)
+![Loading State](https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/loading.png)
+![Error State](https://github.com/Mariam-Elkhelawy/route_task/blob/master/assets/screens/error.png)
 
 ## 🗂️ Project Structure
 
