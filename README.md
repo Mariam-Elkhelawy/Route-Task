@@ -1,4 +1,4 @@
-# 🛒 Product List App
+# 🛒 Product List (Route Task)
 
 This Flutter application displays a list of products fetched from a remote API in a grid view. The project adheres to the principles of clean architecture, using Bloc for state management, the repository pattern for data handling, and dependency injection with `get_it` and `injectable`.
 
@@ -37,15 +37,11 @@ The project follows the MVVM pattern and clean architecture. Below is a brief ov
 - **`README.md`**: This Markdown file contains documentation and information about the project structure, features, and usage instructions.
 
 ## 🏛️ Architecture
-
 ### 🗃️ Bloc
-
 The application uses Bloc for state management. The `ProductBloc` handles fetching products and updating the UI state.
-
 ### 🏗️ Repository Pattern
 
 The `ProductRepository` handles data fetching from the API. It abstracts the data source from the Bloc.
-
 ### 🔌 Dependency Injection
 
 The application uses `get_it` and `injectable` for dependency injection. Dependencies are registered in the `setup.dart` file.
